@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hong Pan's research on structural health monitoring, pipeline integrity, and data-driven infrastructure decisions at The University of Texas at Arlington.">
+<meta name="color-scheme" content="light">
+<title>Hong Pan | Infrastructure Monitoring &amp; AI</title>
+<style>
+:root{--ink:#182c44;--muted:#485c70;--blue:#155789;--line:#cddbe7;--paper:#f1f6fa;--white:#fff;--max:72rem}
+*{box-sizing:border-box}body{margin:0;background:var(--white);color:var(--ink);font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--blue);text-underline-offset:.2em}a:hover{color:#0c375c}a:focus-visible{outline:3px solid #bf550c;outline-offset:5px;border-radius:2px}
+.wrap{width:min(calc(100% - 3rem),var(--max));margin-inline:auto}.skip{position:absolute;top:-6rem;left:1rem;background:white;padding:.8rem;z-index:3}.skip:focus{top:1rem}.top{border-bottom:1px solid var(--line);background:var(--white)}.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}.brand{color:var(--ink);font-weight:750;text-decoration:none;font-size:1.12rem}.nav{display:flex;gap:clamp(.8rem,2.8vw,2rem);flex-wrap:wrap}.nav a{color:var(--ink);text-decoration:none;font-size:.92rem}.nav a:hover{text-decoration:underline}
+.hero{background:var(--paper);border-bottom:1px solid var(--line)}.herogrid{display:grid;grid-template-columns:1fr minmax(17rem,32%);gap:clamp(2rem,5vw,5rem);align-items:center;padding-block:clamp(3rem,7vw,6rem)}.eyebrow{font-size:.83rem;letter-spacing:.12em;color:var(--blue);font-weight:750;text-transform:uppercase;margin:0 0 .7rem}h1,h2,h3{line-height:1.14;letter-spacing:-.03em}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500}h1{font-size:clamp(3.65rem,8.3vw,7.75rem);margin:0 0 .35rem}h2{font-size:clamp(2.25rem,4vw,3.6rem);margin:0 0 1.4rem}h3{font-size:1.18rem;margin:0 0 .65rem}.tagline{font-size:clamp(1.35rem,2.5vw,2rem);font-weight:620;line-height:1.22;margin:0 0 1.15rem}.lead{max-width:37rem;color:var(--muted);margin:0 0 1.35rem}.links{display:flex;flex-wrap:wrap;gap:.7rem}.pill{border:1px solid #a3bbcf;border-radius:4px;padding:.55rem .85rem;text-decoration:none;font-weight:650}.strong{background:#145380;color:white;border-color:#145380}.strong:hover{background:#0d3c61;color:white}.hero-art{width:100%;height:auto;display:block}.art-label{margin:.65rem 0 0;text-align:center;font-size:.82rem;color:var(--muted)}.band{padding-block:clamp(2.5rem,5vw,4.4rem);border-bottom:1px solid var(--line)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem}.card{padding:1.3rem;border:1px solid var(--line);border-top:3px solid #4783a6;border-radius:4px}.card p{color:var(--muted);margin:0}.pubs{padding:0;margin:0;list-style:none}.pubs li{display:grid;grid-template-columns:4.2rem 1fr;gap:.9rem;padding:1rem 0;border-top:1px solid var(--line)}.year{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:750}.pubs a{font-weight:650}.journal{display:block;color:var(--muted);font-size:.94rem;margin-top:.2rem}.minor{color:var(--muted);max-width:43rem}.foot{background:var(--paper);padding-block:1.7rem;color:var(--muted)}.foot .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}.foot p{margin:0}
+@media(max-width:760px){.wrap{width:calc(100% - 2rem)}.herogrid{grid-template-columns:1fr;gap:1.9rem}.illustration{max-width:22rem;margin:0 auto;width:100%}.cards{grid-template-columns:1fr}.bar{align-items:flex-start}.pubs li{grid-template-columns:3.4rem 1fr;gap:.55rem}}
+@media(max-width:380px){.bar{flex-direction:column;gap:.5rem}.nav{gap:.85rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar"><a class="brand" href="#top">Hong Pan</a><nav class="nav" aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav></div></header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap herogrid">
+<div><p class="eyebrow">Civil engineering · UT Arlington</p><h1>Hong Pan</h1>
+<p class="tagline">Monitoring the infrastructure we rely on</p>
+<p class="lead">I study how sensing, signal processing, and machine learning can help engineers interpret inspection data and assess the condition of pipelines, bridges, and other civil infrastructure.</p>
+<div class="links"><a class="pill strong" href="#publications">Selected publications</a><a class="pill" href="https://scholar.google.com/citations?user=yZ7U6gMAAAAJ&amp;hl=en">Google Scholar</a></div></div>
+<div class="illustration">
+<svg class="hero-art" viewBox="0 0 390 270" role="img" aria-labelledby="graphic-title">
+<title id="graphic-title">Conceptual illustration of a sensor signal traveling along a pipe</title>
+<defs><pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0v22" fill="none" stroke="#d6e4ee" stroke-width="1"/></pattern></defs>
+<rect x="1" y="1" width="388" height="268" rx="8" fill="#e9f1f7" stroke="#b4cada" stroke-width="2"/>
+<rect x="14" y="14" width="362" height="242" fill="url(#grid)"/>
+<path d="M32 102h43l12-10 13 22 16-45 17 71 17-43 13 5h42l14-13 15 26 15-44 15 55 16-24h77" fill="none" stroke="#216a96" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M41 179h308v44H41z" fill="#c5dce9" stroke="#1b4565" stroke-width="2"/>
+<path d="M42 190h306m-306 24h306" fill="none" stroke="#5991b0" stroke-width="1.6"/>
+<ellipse cx="42" cy="201" rx="12" ry="22" fill="#f1f6fa" stroke="#1b4565" stroke-width="2"/>
+<ellipse cx="350" cy="201" rx="12" ry="22" fill="#b0cede" stroke="#1b4565" stroke-width="2"/>
+<path d="M117 146v27m131-27v27" stroke="#467998" stroke-width="1.5" stroke-dasharray="4 4"/>
+<rect x="107" y="169" width="20" height="14" rx="2" fill="#216a96"/>
+<rect x="238" y="169" width="20" height="14" rx="2" fill="#216a96"/>
+<circle cx="117" cy="144" r="3" fill="#216a96"/><circle cx="248" cy="144" r="3" fill="#216a96"/>
+</svg>
+<p class="art-label">Guided-wave sensing concept · not measured data</p></div>
+</div></section>
+<section class="band" id="research"><div class="wrap"><p class="eyebrow">Research</p><h2>From signals to decisions</h2>
+<div class="cards"><article class="card"><h3>Structural health monitoring</h3><p>Distinguishing measurement anomalies from structural changes in sensor data collected from civil infrastructure.</p></article>
+<article class="card"><h3>Pipeline inspection and integrity</h3><p>Combining ultrasonic guided waves, lab experiments, and numerical simulation to study defects and degradation.</p></article>
+<article class="card"><h3>Protective materials</h3><p>Studying how nanomaterial-reinforced coatings adhere to substrates and protect infrastructure from hostile environments.</p></article></div>
+</div></section>
+<section class="band" id="publications"><div class="wrap"><p class="eyebrow">Research outputs</p><h2>Selected publications</h2>
+<ul class="pubs">
+<li><span class="year">2026</span><div><a href="https://doi.org/10.1177/14759217261481423">A data separability-driven framework for sensor measurement anomaly classification in structural health monitoring</a><span class="journal">Structural Health Monitoring</span></div></li>
+<li><span class="year">2026</span><div><a href="https://doi.org/10.1016/j.conbuildmat.2026.148136">Mechanism-guided data-driven adhesion evaluation of nanomaterial-reinforced epoxy coatings</a><span class="journal">Construction and Building Materials</span></div></li>
+<li><span class="year">2026</span><div><a href="https://doi.org/10.1063/5.0291484">Experimental analysis of particle-laden flow and erosion mitigation in a 90° elbow using guide vanes</a><span class="journal">International Journal of Fluid Engineering</span></div></li>
+<li><span class="year">2025</span><div><a href="https://doi.org/10.1061/9780784486375.050">Advancing Sensor Network Optimization and Data Analytics for Smart Wastewater and Stormwater Collection Systems: An Overview</a><span class="journal">ASCE Pipelines 2025</span></div></li>
+<li><span class="year">2023</span><div><a href="https://doi.org/10.3390/s23167059">CNN-LSTM Hybrid Model to Promote Signal Processing of Ultrasonic Guided Lamb Waves for Damage Detection in Metallic Pipelines</a><span class="journal">Sensors</span></div></li>
+</ul>
+<p><a href="https://scholar.google.com/citations?user=yZ7U6gMAAAAJ&amp;hl=en">See the full publication list on Google Scholar</a></p></div></section>
+<section class="band" id="contact"><div class="wrap"><p class="eyebrow">Contact</p><h2>Get in touch</h2><p class="minor">For research inquiries, reach me through the University of Texas at Arlington. You can also find my publications and code through the profiles below.</p>
+<div class="links"><a class="pill strong" href="mailto:hong.pan@uta.edu">Email</a><a class="pill" href="https://github.com/tjdxph">GitHub</a><a class="pill" href="https://orcid.org/0000-0003-4036-6886">ORCID</a><a class="pill" href="https://scholar.google.com/citations?user=yZ7U6gMAAAAJ&amp;hl=en">Google Scholar</a></div></div></section>
+</main>
+<footer class="foot"><div class="wrap"><p>Hong Pan · The University of Texas at Arlington</p><a href="#top">Back to top</a></div></footer>
+</body></html>
